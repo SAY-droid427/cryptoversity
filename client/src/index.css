@@ -29,3 +29,47 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+.welcomeStyle{
+  background-image: linear-gradient(to right,rgb(4, 0, 7), rgb(77, 3, 36),rgb(93, 2, 2), rgba(44, 3, 80));
+  color:white;
+  height: 250px;; 
+
+}
+
+.welcome-section{
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  justify-self: center;
+}
+
+.intro-section{
+  text-align: center;
+}
+
+.buttonRowStyle{
+  padding: 20px;
+  width: 45%;
+}
+
+.buttonStyle{
+  background: rgba(19, 19, 19, 0.46);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 1.2);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border: 1px solid rgba(0, 0, 0, 0.96);
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.buttonStyle:hover{
+  background:black;
+  opacity: 90%;
+  cursor: pointer;
+  font-size: 1.05rem;
+  padding: 10px;
+  font-size: 1.2rem;
+}

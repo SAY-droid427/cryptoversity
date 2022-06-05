@@ -17,9 +17,8 @@ const NavBar = () => {
             <Container fluid>
             <Navbar.Brand>Cryptoversity</Navbar.Brand> 
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            
             <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
+                <Nav className="me-auto">
                     {["Login", "Market", "Exchange", "Tutorials", "Wallets"].map((item, index)=>(
                             <NavbarItem key={item+index} title={item} />
                         ))}                 
