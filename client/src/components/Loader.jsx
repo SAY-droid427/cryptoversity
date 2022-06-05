@@ -1,6 +1,9 @@
+import { Container } from 'react-bootstrap';
 const Loader = () => {
     return (
-        <h1> Loader </h1>
+        <Container fluid>
+            Loader
+        </Container>
     )
 }
 
