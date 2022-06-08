@@ -6,10 +6,11 @@ import { Container, Row, Card, Form } from 'react-bootstrap';
 import { Loader } from './';
 import '../index.css'
 import { TransactionContext } from '../context/TransactionContext';
+import {shortenAddress} from '../utils/shortenAddress';
 
 const Welcome = () => {
 
-    const { connectWallet, connectedAccount, formData, setFormData, handleChange, sendTransaction } = useContext(TransactionContext);
+    const {  connectWallet, connectedAccount, formData, handleChange, sendTransaction } = useContext(TransactionContext);
     
     const handleSubmit = (e) => {
         const { addressTo, amount, keyword, message }=formData;
@@ -47,7 +48,7 @@ const Welcome = () => {
                             <SiEthereum fontSize={21} color="#fff" />
                         </Card.Title>
                         <Card.Text style={{marginTop:"10px"}}>
-                        <div>Address</div>
+                        <div>{shortenAddress(connectedAccount)}</div>
                         <div>Ethereum</div>
                         </Card.Text> 
                         <Form>
