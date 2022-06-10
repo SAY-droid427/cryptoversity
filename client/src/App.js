@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavBar, Welcome, Footer, Transactions } from './components';
+import { NavBar, Welcome, Footer, Transactions, News } from './components';
 const App = () => {
   return (
     <div className="min-h-screen">
@@ -8,6 +8,7 @@ const App = () => {
         <Welcome />
       </div>
       <Transactions />
+      <News />
       <Footer />
     </div>
   )

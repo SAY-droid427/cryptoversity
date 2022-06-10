@@ -14,13 +14,13 @@ const Transactions = () => {
     return (
         <Container fluid className="transactionStyle">
             {connectedAccount ? (
-                <Row>
+                <Row className="transactionHeaderStyle">
                     <h3>Latest Transactions</h3>
                 </Row>
             ):
             (
-                <Row>
-                    <div>Connect your account</div>
+                <Row className="transactionHeaderStyle">
+                    <h3>Connect your account</h3>
                 </Row>
                 
             )}

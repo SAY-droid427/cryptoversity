@@ -33,7 +33,7 @@ body {
 .welcomeStyle{
   background-image: linear-gradient(to right,rgb(4, 0, 7), rgb(77, 3, 36),rgb(93, 2, 2), rgba(44, 3, 80));
   color:white;
-  height: 700px;; 
+  height: 600px;; 
 
 }
 
@@ -101,6 +101,7 @@ body {
 
 .transactionStyle{ 
   padding: 50px 10px;
+  background-image: linear-gradient(to right, rgb(4, 0, 7), rgb(77, 3, 36),rgb(93, 2, 2), rgba(44, 3, 80));
   background-color: rgb(235, 230, 219);
 }
 
@@ -111,8 +112,31 @@ body {
 }
 
 .deckStyle{
-  margin: 10px;
+  margin: 20px;
   padding: 20px;
   color:rgb(255, 248, 248);
   justify-content: center;
+}
+
+.transactionHeaderStyle{
+  padding-left:10px;
+  color:white;
+}
+
+.timeStyle{
+  margin-top:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:white;
+  color:black;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding-top:10px;
+
+}
+
+.gifStyle{
+  height: 40vh;
+  width: 100%;
 }
