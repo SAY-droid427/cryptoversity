@@ -140,3 +140,14 @@ body {
   height: 40vh;
   width: 100%;
 }
+
+.footerStyle{
+  background-color: black;
+  color:wheat;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  padding-top: 30px;
+  font:bolder;
+  font-size: 1.2rem;
+}
