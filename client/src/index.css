@@ -155,6 +155,7 @@ body {
 .rankCardStyle{
   display:flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .nav-link-style, .nav-link-style:hover{
