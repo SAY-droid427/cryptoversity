@@ -151,3 +151,25 @@ body {
   font:bolder;
   font-size: 1.2rem;
 }
+
+.rankCardStyle{
+  display:flex;
+  flex-direction: row;
+}
+
+.nav-link-style, .nav-link-style:hover{
+  text-decoration: none;
+  color:white;
+}
+
+.welcome-style{
+  background-image: linear-gradient(to right,rgb(4, 0, 7), rgb(77, 3, 36),rgb(93, 2, 2), rgba(44, 3, 80));
+  color:white;
+  text-align: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.service-style{
+  padding:100px;
+}

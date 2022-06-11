@@ -1,72 +1,44 @@
-import 'bootstrap/dist/css/bootstrap.css';
-import React from 'react';
-import { useContext } from 'react';
-import { SiEthereum } from 'react-icons/si';
-import { Container, Row, Card, Form } from 'react-bootstrap';
-import { Loader } from './';
-import '../index.css'
-import { TransactionContext } from '../context/TransactionContext';
-import {shortenAddress} from '../utils/shortenAddress';
+import {Container, Card, Row, Col} from 'react-bootstrap';
 
 const Welcome = () => {
-
-    const {  connectWallet, connectedAccount, formData, handleChange, sendTransaction } = useContext(TransactionContext);
-    
-    const handleSubmit = (e) => {
-        const { addressTo, amount, keyword, message }=formData;
-        e.preventDefault();
-
-        if(!addressTo || !amount || !keyword || !message )
-        return;
-
-        sendTransaction();
-    }
-
     return (
-        <Container fluid className="welcomeStyle">
-            <Row className="justify-content-md-center m-auto">
-               <div className="welcome-section">
-                   Everything Crypto
-               </div>               
-            </Row>
-            <Row className="justify-content-md-center m-auto">
-                <div className="intro-section">
-                    Explore the world of crypto. Buy and sell cryptocurrencies, read news on crypto and everything related to crypto.
-                </div>
-            </Row>
-            <Row className="justify-content-md-center m-auto buttonRowStyle">
-            {!connectedAccount && (
-            <button type="button" className="buttonStyle" onClick={connectWallet}>
-                Connect wallet
-            </button>)}
-            </Row> 
-            <Row className="justify-content-md-center m-auto" >
-                <Card style={{backgroundColor:"transparent", outline:"none",width:"25rem", border:"none"}}>
-                    <div>
-                    <Card.Body className="cardStyle">
-                        <Card.Title>
-                            <SiEthereum fontSize={21} color="#fff" />
-                        </Card.Title>
-                        <Card.Text style={{marginTop:"10px"}}>
-                        <div>{shortenAddress(connectedAccount)}</div>
-                        <div>Ethereum</div>
-                        </Card.Text> 
-                        <Form>
-                            <Form.Group>
-                                <Form.Control type="text" placeholder="Address To" name="addressTo" onChange={handleChange} className="formStyle" />
-                                <Form.Control type="number" placeholder="Amount(ETH)" name="amount" onChange={handleChange} className="formStyle" />
-                                <Form.Control type="text" placeholder="Enter Message" name="message" onChange={handleChange} className="formStyle" />
-                                <Form.Control type="text" placeholder="Keyword (Gif)" name="keyword" onChange={handleChange} className="formStyle" />
-                            </Form.Group>
-                        </Form>
-                        {false? <Loader />: (
-                            <button type="button" onClick={handleSubmit} className="submitStyle">Send Now</button>
-                        )}
-                    </Card.Body>
-                    </div>                                           
-                </Card>
-            </Row>
-                     
+        <Container fluid className="welcome-style">
+            <h2>Welcome to Cryptoversity</h2>
+            <br />
+            <h4>A website for everything crypto......everything</h4>
+            <Container className="service-style">
+                <h3>Services</h3>
+            </Container>
+            <Container>
+                <Row>
+                    <Col sm={6}>
+                        <Card className="deckStyle" style={{backgroundColor:"black"}}>
+                            <Card.Title>Send Ethereum</Card.Title>
+                            <Card.Body>Its simple and easy! Connect your wallet and send ethereum!</Card.Body>
+                        </Card>
+                    </Col>
+                    <Col sm={6}>
+                        <Card className="deckStyle" style={{backgroundColor:"black"}}>
+                            <Card.Title>View Transactions</Card.Title>
+                            <Card.Body>Made some transactions? View them in a click.</Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={6}>
+                        <Card className="deckStyle" style={{backgroundColor:"black"}}>
+                            <Card.Title>Current Rankings</Card.Title>
+                            <Card.Body>View global stats and current rankings of coins.</Card.Body>
+                        </Card>
+                    </Col>
+                    <Col sm={6}>
+                        <Card className="deckStyle" style={{backgroundColor:"black"}}>
+                            <Card.Title>News</Card.Title>
+                            <Card.Body>Stay updated with all the happenings in the fast-paced crypto world!</Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
         </Container>
     )
 }
