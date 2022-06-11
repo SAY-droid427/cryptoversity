@@ -12,7 +12,7 @@ const createRequest = (url) => ({
     headers :cryptoHeaders
 });
 
-const cryptoAPI = createApi({
+export const cryptoAPI = createApi({
     reducerPath:'cryptoAPI',
     baseQuery: fetchBaseQuery({baseURL}),
     endpoints: (builder) => ({

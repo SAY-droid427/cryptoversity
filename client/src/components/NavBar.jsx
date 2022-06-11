@@ -25,7 +25,7 @@ const NavBar = () => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
-                    {["Login", "Homepage","Transactions", "Rankings", "News"].map((item, index)=>(
+                    {["Homepage","Transactions", "Rankings", "News"].map((item, index)=>(
                             <NavbarItem key={item+index} title={item} />
                         ))}                 
                 </Nav>
