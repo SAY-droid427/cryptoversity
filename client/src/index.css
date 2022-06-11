@@ -118,6 +118,11 @@ body {
   justify-content: center;
 }
 
+.crypto-image{
+  height:30px;
+  padding-left:20px;
+}
+
 .transactionHeaderStyle{
   padding-left:10px;
   color:white;
@@ -153,9 +158,13 @@ body {
 }
 
 .rankCardStyle{
+  background-color: black;
+}
+.cryptoDeckStyle{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
+  text-decoration: none;
 }
 
 .nav-link-style, .nav-link-style:hover{
@@ -179,4 +188,13 @@ body {
   padding:20px;
   color:white;
   background-image: linear-gradient(to right,rgb(4, 0, 7), rgb(77, 3, 36),rgb(93, 2, 2), rgba(44, 3, 80));
+}
+
+.searchCryptoStyle{
+  border: none;
+  outline:none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top:10px;
+
 }
