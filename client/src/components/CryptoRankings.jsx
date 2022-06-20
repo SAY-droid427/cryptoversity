@@ -24,10 +24,10 @@ const CryptoRankings = () => {
         <>
             <Container fluid className="rank-header-style">
                 <h2>Current Rankings and Global Statistics</h2>                
-                <input type="text" className="searchCryptoStyle" placeholder="Search Cryptocurrency" onChange={(e) => setSearchCoin(e.target.value.toLowerCase())}></input>
+                <input type="text" className="search-crypto-style" placeholder="Search Cryptocurrency" onChange={(e) => setSearchCoin(e.target.value.toLowerCase())}></input>
             </Container>        
 
-            <div className="cryptoDeckStyle">
+            <div className="crypto-deck-style">
                 {cryptos?.map((currency) => (
                     <CryptoCard key={currency.uuid} currency={currency} />
                 ))}

@@ -12,19 +12,19 @@ const Transactions = () => {
     const { transactions, connectedAccount } = useContext(TransactionContext);
 
     return (
-        <Container fluid className="transactionStyle">
+        <Container fluid className="transaction-style">
             {connectedAccount ? (
-                <Row className="transactionHeaderStyle">
+                <Row className="transaction-header-style">
                     <h3>Latest Transactions</h3>
                 </Row>
             ):
             (
-                <Row className="transactionHeaderStyle">
+                <Row className="transaction-header-style">
                     <h3>Connect your account</h3>
                 </Row>
                 
             )}
-            <div className="transactionCardStyle">
+            <div className="transaction-card-style">
                 {[...dummyData, ...transactions].reverse().map((transaction, i) => (
                     <TransactionCard key={i} {...transaction} />
                 ))}

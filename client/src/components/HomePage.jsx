@@ -23,7 +23,7 @@ const HomePage = () => {
     }
 
     return (
-        <Container fluid className="welcomeStyle">
+        <Container fluid className="welcome-style">
             <Row className="justify-content-md-center m-auto">
                <div className="welcome-section">
                    Everything Crypto
@@ -43,7 +43,7 @@ const HomePage = () => {
             <Row className="justify-content-md-center m-auto" >
                 <Card style={{backgroundColor:"transparent", outline:"none",width:"25rem", border:"none"}}>
                     <div>
-                    <Card.Body className="cardStyle">
+                    <Card.Body className="card-style">
                         <Card.Title>
                             <SiEthereum fontSize={21} color="#fff" />
                         </Card.Title>
@@ -53,14 +53,14 @@ const HomePage = () => {
                         </Card.Text> 
                         <Form>
                             <Form.Group>
-                                <Form.Control type="text" placeholder="Address To" name="addressTo" onChange={handleChange} className="formStyle" />
-                                <Form.Control type="number" placeholder="Amount(ETH)" name="amount" onChange={handleChange} className="formStyle" />
-                                <Form.Control type="text" placeholder="Enter Message" name="message" onChange={handleChange} className="formStyle" />
-                                <Form.Control type="text" placeholder="Keyword (Gif)" name="keyword" onChange={handleChange} className="formStyle" />
+                                <Form.Control type="text" placeholder="Address To" name="addressTo" onChange={handleChange} className="form-style" />
+                                <Form.Control type="number" placeholder="Amount(ETH)" name="amount" onChange={handleChange} className="form-style" />
+                                <Form.Control type="text" placeholder="Enter Message" name="message" onChange={handleChange} className="form-style" />
+                                <Form.Control type="text" placeholder="Keyword (Gif)" name="keyword" onChange={handleChange} className="form-style" />
                             </Form.Group>
                         </Form>
                         {false? <Loader />: (
-                            <button type="button" onClick={handleSubmit} className="submitStyle">Send Now</button>
+                            <button type="button" onClick={handleSubmit} className="submit-style">Send Now</button>
                         )}
                     </Card.Body>
                     </div>                                           

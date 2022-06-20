@@ -12,7 +12,7 @@ const TransactionCard = ({addressTo, addressFrom, timestamp, message, keyword, a
     return (
             <Col sm="6" md="4">
                 <div>
-                    <Card className="deckStyle" style={{backgroundColor:"black"}}>
+                    <Card className="deck-style" style={{backgroundColor:"black"}}>
                         <Card.Body>
                             <p>From : {shortenAddress(addressTo)}</p>
                             <p>To : {shortenAddress(addressFrom)}</p>
@@ -23,8 +23,8 @@ const TransactionCard = ({addressTo, addressFrom, timestamp, message, keyword, a
                                 <p>Message: {message}</p>
                                 </>
                             )}
-                            <img src={gifUrl || url} alt="nature" className="gifStyle" />
-                            <div className="timeStyle">
+                            <img src={gifUrl || url} alt="nature" className="gif-style" />
+                            <div className="time-style">
                                 <p>{timestamp}</p>
                             </div>
                             
