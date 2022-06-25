@@ -16,9 +16,4 @@ A web application which serves as the final destination for all crypto lovers.
 4. Solidity for smart_contract
 5. Metamask for cryptowallet
 
-## Images
-
-<p align="center">
-  <img width="500" height="300" src="https://imgur.com/a/3ddZxny" />
-</p>
 
